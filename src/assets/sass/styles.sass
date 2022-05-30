@@ -1,0 +1,95 @@
+.tabs_header
+    display: flex
+    justify-content: space-around
+    gap: 20px
+    margin-bottom: 10px
+    background-color: #F2F2F2
+    @media screen and ( max-width: 428px )
+        flex-direction: column
+    a
+        background-color: #F2F2F2
+        width: 100%
+        display: block
+        text-align: center
+        text-decoration: none
+        font-size: 24px
+        padding: 10px 20px
+        font-weight: 600
+        color: #323232
+        &.active
+            color: #e30613
+            border-bottom: 2px solid #e30613
+.tabs_container
+    .tabs_item
+        display: none
+        &.active
+            display: block    
+        .swiper
+            width: 100%
+            height: 100%
+            align-content: stretch 
+            .swiper-slide
+                text-align: center
+                font-size: 18px
+                background: #fff
+                display: flex
+                flex-direction: column
+                align-content: stretch
+                .headerSlide
+                    width: 100%
+                    height: 100%
+                    .headerTitle
+                        position: relative
+                        padding: 20px 23px
+                        background: #222222
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 20px
+                        text-align: center
+                        text-transform: uppercase
+                        color: #FFFFFF
+                        margin-bottom: 20px
+                    .headerPrice
+                        padding: 0 20px
+                        margin-bottom: 20px
+                        text-transform: uppercase
+                        color: #222222
+                        text-align: center
+                        font-weight: 700
+                        font-size: 16px
+                        line-height: 20px
+                .priceListSlide
+                    padding: 20px 10px 0
+                    border-top: 1px solid #F0F0F0
+                    display: block
+                    height: auto
+                    ul
+                        padding-left: 0
+                        list-style-type: none
+                        li
+                            display: flex
+                            justify-content: space-between
+                            font-size: 14px
+                            line-height: 13px
+                            color: #222222
+                            transition: all .2s
+                            padding: 6px 10px
+                            .nameService
+                                text-align: left
+                                margin-right: 10px
+                                font-weight: 400
+                                font-size: 12px
+                                line-height: 1.2em
+                            .priceService
+                                text-align: right
+                                font-weight: 700
+                                min-width: 64px
+                                flex-shrink: 0
+                .btnGroup
+                    width: 100%
+                    margin-top: auto
+                    button
+                        &.btnRed
+                            background-color: #E30613
+                            color: #fff
+                            width: 80%
